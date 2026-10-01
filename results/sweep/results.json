@@ -1,0 +1,90 @@
+{
+  "baseline": {
+    "block_size": 128,
+    "n_embd": 256,
+    "lr": 0.001
+  },
+  "steps": 1500,
+  "results": [
+    {
+      "axis": "block_size",
+      "value": 32,
+      "run": "ctx32_emb256_lr0.001",
+      "best_val_loss": 3.0072,
+      "params": 3290624,
+      "seconds": 54.6
+    },
+    {
+      "axis": "block_size",
+      "value": 64,
+      "run": "ctx64_emb256_lr0.001",
+      "best_val_loss": 2.8913,
+      "params": 3290624,
+      "seconds": 89.3
+    },
+    {
+      "axis": "block_size",
+      "value": 128,
+      "run": "ctx128_emb256_lr0.001",
+      "best_val_loss": 2.8176,
+      "params": 3290624,
+      "seconds": 207.7
+    },
+    {
+      "axis": "block_size",
+      "value": 256,
+      "run": "ctx256_emb256_lr0.001",
+      "best_val_loss": 2.8703,
+      "params": 3290624,
+      "seconds": 561.4
+    },
+    {
+      "axis": "n_embd",
+      "value": 128,
+      "run": "ctx128_emb128_lr0.001",
+      "best_val_loss": 3.1537,
+      "params": 858880,
+      "seconds": 310.7
+    },
+    {
+      "axis": "n_embd",
+      "value": 256,
+      "run": "ctx128_emb256_lr0.001",
+      "best_val_loss": 2.8176,
+      "params": 3290624,
+      "seconds": 207.7
+    },
+    {
+      "axis": "n_embd",
+      "value": 384,
+      "run": "ctx128_emb384_lr0.001",
+      "best_val_loss": 2.7759,
+      "params": 7295232,
+      "seconds": 1607.9
+    },
+    {
+      "axis": "lr",
+      "value": 0.0003,
+      "run": "ctx128_emb256_lr0.0003",
+      "best_val_loss": 3.0888,
+      "params": 3290624,
+      "seconds": 363.4
+    },
+    {
+      "axis": "lr",
+      "value": 0.001,
+      "run": "ctx128_emb256_lr0.001",
+      "best_val_loss": 2.8176,
+      "params": 3290624,
+      "seconds": 207.7
+    },
+    {
+      "axis": "lr",
+      "value": 0.003,
+      "run": "ctx128_emb256_lr0.003",
+      "best_val_loss": 2.7918,
+      "params": 3290624,
+      "seconds": 298.2
+    }
+  ]
+}

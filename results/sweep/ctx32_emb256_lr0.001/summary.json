@@ -1,0 +1,16 @@
+{
+  "cfg": {
+    "vocab_size": 512,
+    "block_size": 32,
+    "n_layer": 4,
+    "n_head": 4,
+    "n_embd": 256,
+    "dropout": 0.1
+  },
+  "lr": 0.001,
+  "steps": 1500,
+  "params": 3290624,
+  "best_val_loss": 3.0072,
+  "seconds": 54.6,
+  "device": "mps"
+}
