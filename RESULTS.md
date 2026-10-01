@@ -12,7 +12,7 @@ Data: Tiny Shakespeare, 576K BPE tokens (vocab 512), with the last 10% of the co
 | parameters | 3.29M |
 | val loss at step 0 | 6.26 (ln 512 = 6.24, i.e. uniform) |
 | best val loss | **2.793** at step 2,750 (perplexity 16.3 per BPE token) |
-| final train / val loss | 1.66 / 2.84 at step 5,000 (overfitting after ~2,750) |
+| final train / val loss | 1.66 / 2.85 at step 5,000 (overfitting after ~2,750) |
 
 The best-validation checkpoint is kept, not the last one.
 
