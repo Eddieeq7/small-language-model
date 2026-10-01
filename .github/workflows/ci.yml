@@ -1,0 +1,13 @@
+name: ci
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install numpy pytest
+      - run: python -m pytest -v tests
+      - name: smoke-train 50 steps on CPU
+        run: python -m slm.train --steps 50 --eval_every 25 --eval_iters 4 --n_embd 64 --out runs/ci --device cpu
